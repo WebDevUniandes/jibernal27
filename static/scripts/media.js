@@ -3,14 +3,14 @@ $(document).ready(function() {
 
   var divDescription = document.getElementById("description");
    var h2 = document.createElement("h2");
-   jQuery.get('/static/txt/descripciones.txt', function(descriText) {  
+   jQuery.get('static/txt/descripciones.txt', function(descriText) {  
      h2.appendChild(document.createTextNode(descriText));
 });
   
   divDescription.appendChild(h2); 
 
 
-   jQuery.get('/static/json/yo.json', function(jsonYo) {  
+   jQuery.get('static/json/yo.json', function(jsonYo) {  
 
       var divEstudio=document.getElementById("logros");
       var h3=document.createElement("h3");
@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 
 
-  jQuery.get('/static/json/iqui.json', function(jsonIQUI) {  
+  jQuery.get('static/json/iqui.json', function(jsonIQUI) {  
     
       var divIQUI=document.getElementById("IQUI");
      jsonIQUI=JSON.parse(jsonIQUI);
@@ -280,7 +280,7 @@ $(document).ready(function() {
 
 
 
-  jQuery.get('/static/json/isis.json', function(jsonISIS) {  
+  jQuery.get('static/json/isis.json', function(jsonISIS) {  
     
       var divIQUI=document.getElementById("ISIS");
      jsonISIS=JSON.parse(jsonISIS);
