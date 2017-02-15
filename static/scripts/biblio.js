@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	jQuery.get('static/json/biblio.json', function(jsonBibli) { 
 
-		 jsonBibli=JSON.parse(jsonBibli);
+		
 
 		  var divBblio=document.getElementById("bibliografia");
 
