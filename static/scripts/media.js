@@ -14,7 +14,7 @@ $(document).ready(function() {
 
       var divEstudio=document.getElementById("logros");
       var h3=document.createElement("h3");
-      jsonYo=JSON.parse(jsonYo);
+      
       var logros1=jsonYo.logros;
       h3.className = 'centered';
       h3.appendChild(document.createTextNode("Mis logros"));
@@ -66,8 +66,7 @@ $(document).ready(function() {
   jQuery.get('static/json/iqui.json', function(jsonIQUI) {  
     
       var divIQUI=document.getElementById("IQUI");
-     jsonIQUI=JSON.parse(jsonIQUI);
-
+     
       descripcion=jsonIQUI.descripcion;
       var p=document.createElement("p");
       p.className = 'justified';
@@ -283,7 +282,7 @@ $(document).ready(function() {
   jQuery.get('static/json/isis.json', function(jsonISIS) {  
     
       var divIQUI=document.getElementById("ISIS");
-     jsonISIS=JSON.parse(jsonISIS);
+    
 
       descripcion=jsonISIS.descripcion;
       var p=document.createElement("p");
